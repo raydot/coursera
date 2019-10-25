@@ -23,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/raydot/coursera/issues"
   },
-  "homepage": "https://github.com/raydot/coursera#readme"
+  "homepage": "https://github.com/raydot/coursera#readme",
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
 }
