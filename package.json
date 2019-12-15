@@ -1,0 +1,32 @@
+{
+  "name": "coursera",
+  "version": "0.0.1",
+  "description": "Programming work done for Coursera courses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raydot/coursera.git"
+  },
+  "keywords": [
+    "git",
+    "coursera",
+    "study",
+    "algorithms",
+    "computer",
+    "science"
+  ],
+  "author": "Dave Kanter <dave@davekanter.com> (http://www.davekanter.com/)",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/raydot/coursera/issues"
+  },
+  "homepage": "https://github.com/raydot/coursera#readme",
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  }
+}
