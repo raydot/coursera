@@ -16,6 +16,8 @@
 // Base cases:
 // If the input array contains only 0 or 1 elements, MergeSort returns it (it is already sorted).
 
+// this algorithm doesn't split up the passed arrays!
+
 const merge = (arr1, arr2) => {
   let i = 0;
   let j = 0;
