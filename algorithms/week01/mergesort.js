@@ -1,3 +1,4 @@
+const axios = require("axios").default;
 // Page 18
 
 // Pseudocode is on p 16
@@ -169,12 +170,49 @@ function merge2(left, right) {
 // Read that big old file:
 const fs = require("fs");
 
-fs.readFile("IntegerArray.txt", function(err, buf) {
-  // console.log(buf.toString());
-  const list = buf.split("\n");
-  console.log(list);
+let temp = fs
+  .readFileSync("./IntegerArray.txt")
+  .toString()
+  .split("\r\n");
+
+list = temp.map(item => {
+  return parseInt(item);
 });
 
+console.log(list);
+
+// axios
+//   .get("IntegerArray.txt")
+//   .then(res => {
+//     console.log(res.data);
+//   })
+//   .catch(err => {
+//     console.log(err);
+//   });
+
+// async function readList() {
+//   try {
+//     await fs.readFile("IntegerArray.text", function(err, buf) {
+//       list = buf.split("\n");
+//       console.log(list);
+//     });
+//   } catch (err) {
+//     console.log(err);
+//   }
+// }
+
+// fs.readFile("IntegerArray.txt", function(err, buf) {
+//   //console.log(buf);
+//   // list = buf.split("\n");
+//   // console.log(list);
+// });
+
+// readList();
+// console.log(smoot);
+console.log(mergeSort(list));
+console.log("inv: " + inv);
+
+// Test values
 //const list = [2, 5, 1, 3, 7, 2, 3, 8, 6, 3];
 //const list = [9, 12, 3, 1, 6, 8, 2, 5, 14, 13, 11, 7, 10, 4, 0];
 /* const list = [
@@ -229,5 +267,3 @@ fs.readFile("IntegerArray.txt", function(err, buf) {
   30,
   45
 ]; */
-console.log(mergeSort(list));
-console.log("inv: " + inv);
