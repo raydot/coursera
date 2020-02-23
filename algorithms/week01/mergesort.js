@@ -1,5 +1,4 @@
 // --------------------------- SOLUTION ---------
-
 // See earlier commits for not-solutions.
 
 // Split the array into halves and merge them recursively
@@ -42,52 +41,100 @@ function merge2(left, right) {
 // Read that big old file:
 const fs = require("fs");
 
-let list;
+let temp = fs
+  .readFileSync("./IntegerArray.txt")
+  .toString()
+  .split("\r\n");
 
-function readFile(whichFile) {
-  // return a new promise
-  return (new Promise() = (resolve, reject) => {
-    fs.readFile(whichFile, function(err, buf) {
-      if (err) {
-        // console.log(err);
-        reject(Error(err));
-      }
-      // console.log(buf.toString());
-      const temp = buf.toString().split("\r\n");
-      const list = temp.map(x => parseInt(x));
-      //console.log(list);
-    });
-    if (list != null) resolve(list);
-  });
-}
+list = temp.map(item => {
+  return parseInt(item);
+});
 
-/*
-function promise = mergeSplitInvFromFile(fileName) {
-  fs.readFile(fileName, function(err, buf) {
-    if (err) console.log(err);
-    // console.log(buf.toString());
-    const temp = buf.toString().split("\r\n");
-    const list = temp.map(x => parseInt(x));
-    console.log(list);
-  })
-  .then(() => {
-    mergeSort(list);
-  })
-  .then(() => {
-    console.log("inv: " + inv);
-  });
-  //return list;
-}*/
-// run the program
-//mergeSplitInvFromFile("IntegerArray.txt");
+console.log(list);
 
-// console.log(mergeSort(mergeSplitInvFromFile("IntegerArray.txt")));
-//console.log("inv: " + inv);
-readFile("IntegerArray.txt").then(
-  function(response) {
-    console.log("success!", response);
-  },
-  function(error) {
-    console.error("Failed!", error);
-  }
-);
+// axios
+//   .get("IntegerArray.txt")
+//   .then(res => {
+//     console.log(res.data);
+//   })
+//   .catch(err => {
+//     console.log(err);
+//   });
+
+// async function readList() {
+//   try {
+//     await fs.readFile("IntegerArray.text", function(err, buf) {
+//       list = buf.split("\n");
+//       console.log(list);
+//     });
+//   } catch (err) {
+//     console.log(err);
+//   }
+// }
+
+// fs.readFile("IntegerArray.txt", function(err, buf) {
+//   //console.log(buf);
+//   // list = buf.split("\n");
+//   // console.log(list);
+// });
+
+// readList();
+// console.log(smoot);
+console.log(mergeSort(list));
+console.log("inv: " + inv);
+
+// Test values
+//const list = [2, 5, 1, 3, 7, 2, 3, 8, 6, 3];
+//const list = [9, 12, 3, 1, 6, 8, 2, 5, 14, 13, 11, 7, 10, 4, 0];
+/* const list = [
+  37,
+  7,
+  2,
+  14,
+  35,
+  47,
+  10,
+  24,
+  44,
+  17,
+  34,
+  11,
+  16,
+  48,
+  1,
+  39,
+  6,
+  33,
+  43,
+  26,
+  40,
+  4,
+  28,
+  5,
+  38,
+  41,
+  42,
+  12,
+  13,
+  21,
+  29,
+  18,
+  3,
+  19,
+  0,
+  32,
+  46,
+  27,
+  31,
+  25,
+  15,
+  36,
+  20,
+  8,
+  9,
+  49,
+  22,
+  23,
+  30,
+  45
+]; */
