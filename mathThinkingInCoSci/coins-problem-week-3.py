@@ -1,21 +1,21 @@
-def change(number):
+def change(amount):
 
-    if (number % 5 == 0):
+    if (amount % 5 == 0):
         arr = []
 
-    if (number % 5 == 1):
+    if (amount % 5 == 1):
         arr = [7, 7, 7]
 
-    if (number % 5 == 2):
+    if (amount % 5 == 2):
         arr = [7]
 
-    if (number % 5 == 3):
+    if (amount % 5 == 3):
         arr = [7, 7, 7, 7]
 
-    if (number % 5 == 4):
+    if (amount % 5 == 4):
         arr = [7, 7]
 
-    while (sum(arr) < number):
+    while (sum(arr) < amount):
         arr.append(5)
 
     # print("hello", arr)
