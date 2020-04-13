@@ -1,56 +1,28 @@
 def change(number):
-    options[number % 10](number)
 
+    if (number % 5 == 0):
+        arr = []
 
-def zero(number):
-    arr = []
+    if (number % 5 == 1):
+        arr = [7, 7, 7]
+
+    if (number % 5 == 2):
+        arr = [7]
+
+    if (number % 5 == 3):
+        arr = [7, 7, 7, 7]
+
+    if (number % 5 == 4):
+        arr = [7, 7]
+
     while (sum(arr) < number):
         arr.append(5)
+
+    # print("hello", arr)
     return(arr)
 
 
-def one(number):
-    arr = [7, 7, 7]
-    while (sum(arr) < number):
-        arr.append(5)
-    return(arr)
-
-
-def two(number):
-    arr = [7]
-    while (sum(arr) < number):
-        arr.append(5)
-    return(arr)
-
-
-def three(number):
-    arr = [7, 7, 7, 7]
-    while (sum(arr) < number):
-        arr.append(5)
-    return(arr)
-
-
-def four(number):
-    arr = [7, 7]
-    while (sum(arr) < number):
-        arr.append(5)
-    return(arr)
-
-
-# map the mods to the function blocks
-options = {
-    0: zero,
-    1: one,
-    2: two,
-    3: three,
-    4: four,
-    5: zero,
-    6: one,
-    7: two,
-    8: three,
-    9: four
-}
-
+change(99)
 # refactoring:
 # better way to set initial array (tile)
 # better, non-repetitive way to do while (function)
