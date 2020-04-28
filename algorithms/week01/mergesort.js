@@ -32,6 +32,8 @@ function merge2(left, right) {
       inv += left.length - indexLeft;
     }
   }
+  if (isNaN(left.slice.indexLeft)) return "NAN LEFT";
+  if (isNaN(right.slice.indexRight)) return "NAN RIGHT";
   return result.concat(left.slice(indexLeft)).concat(right.slice(indexRight));
 }
 
@@ -50,7 +52,7 @@ list = temp.map(item => {
   return parseInt(item);
 });
 
-console.log(list);
+console.log("list:", list);
 
 // axios
 //   .get("IntegerArray.txt")
@@ -82,6 +84,8 @@ console.log(list);
 // console.log(smoot);
 console.log(mergeSort(list));
 console.log("inv: " + inv);
+
+// This is currently returning 2408005288 inversions which according to the classs isn't right.
 
 // Test values
 //const list = [2, 5, 1, 3, 7, 2, 3, 8, 6, 3];
