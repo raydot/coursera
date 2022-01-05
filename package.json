@@ -25,14 +25,15 @@
     },
     "homepage": "https://github.com/raydot/coursera#readme",
     "devDependencies": {
-        "eslint": "^6.5.1",
+        "acorn": ">=7.1.1",
+        "ansi-regex": ">=5.0.1",
+        "eslint": "^8.6.0",
         "eslint-config-airbnb-base": "^14.0.0",
         "eslint-plugin-import": "^2.18.2",
-        "minimist": ">=0.2.1",
-        "acorn": ">=7.1.1",
-        "path-parse": ">=1.0.7",
         "glob-parent": ">=5.1.2",
-        "hosted-git-info": ">=2.8.9"
+        "hosted-git-info": ">=2.8.9",
+        "minimist": ">=0.2.1",
+        "path-parse": ">=1.0.7"
     },
     "dependencies": {
         "axios": ">=0.21.2",
