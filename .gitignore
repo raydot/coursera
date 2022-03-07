@@ -208,3 +208,6 @@ dmypy.json
 
 #vscode
 .vscode
+
+# NO PDFs
+.pdf
