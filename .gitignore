@@ -211,3 +211,6 @@ dmypy.json
 
 # NO PDFs
 .pdf
+
+# Mac
+.DS_STORE
