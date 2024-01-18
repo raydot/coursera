@@ -34,10 +34,10 @@
     "hosted-git-info": ">=2.8.9",
     "minimist": ">=1.2.6",
     "path-parse": ">=1.0.7",
-    "follow-redirects": ">=1.14.7"
+    "follow-redirects": ">=1.15.4"
   },
   "dependencies": {
-    "axios": ">=0.21.2",
+    "axios": ">=1.6.0",
     "lodash": ">=4.17.21"
   }
 }
