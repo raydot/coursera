@@ -34,7 +34,7 @@
     "hosted-git-info": ">=2.8.9",
     "minimist": ">=0.2.1",
     "path-parse": ">=1.0.7",
-    "follow-redirects": ">=1.14.7"
+    "follow-redirects": ">=1.15.4"
   },
   "dependencies": {
     "axios": ">=0.21.2",
