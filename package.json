@@ -37,7 +37,7 @@
     "follow-redirects": ">=1.15.4"
   },
   "dependencies": {
-    "axios": ">=0.21.2",
+    "axios": ">=1.6.0",
     "lodash": ">=4.17.21"
   }
 }
